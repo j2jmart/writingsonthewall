@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     
+
+
+
+    
     <!--  
         Stylesheets and Preprocessors
         ==============================
@@ -29,11 +33,25 @@
     -->
 
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
   <body>
-    <%- body %>
+
+    <div class="sloppy container">
+    
+    <div class = "jumbotron">
+      <h1><%= Math.round(Math.random()*10000000000000) %></h1>
+
+      <h1> WRITINGS ON THE WALL </h1>
+      <h3> The local message board </h3>
+    </div>
+     
+          
+         
+            <%- body %>
+     </div>
 
 
 
@@ -59,6 +77,7 @@
     -->
 
     <!--TEMPLATES-->
+    
     <!--TEMPLATES END-->
 
 
@@ -86,6 +105,7 @@
     -->
 
     <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
