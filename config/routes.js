@@ -38,7 +38,16 @@ module.exports.routes = {
 
   '/sloppypost' : {
     view: 'sloppypost'
+  },
+
+  '/browselist' : {
+    view: 'browselist'
+  },
+
+  '/mapbrowse' : {
+    view: 'mapbrowse'
   }
+
 
   /***************************************************************************
   *                                                                          *
