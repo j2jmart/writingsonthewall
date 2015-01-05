@@ -1,7 +1,13 @@
+<br>
+
 <ul class = "nav nav-tabs nav-justified">
   <li  >  <a href="/browselist" style="color:white;font-size:20px;"> List </a>
   		<br>
-  		--Insert Map Here--
+  		<%= latitude %>
+  		<br>
+  		<div class="map">
+  			<iframe width="900" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=<%= latitude %>%2C<%= longitude%>&key=AIzaSyCKJj9-P7vzyJkPKlvhwLRdz8iKams4oJc"></iframe>
+  		</div>
 	</li>
 	
 	<li class = "active" style="font-size:20px;"> <a style="color:black;">Map</a>

@@ -33,20 +33,54 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'sloppy'
+    view: 'sloppy',
+    'locals':{
+      title: 'Home'
+    }
   },
+
 
   '/sloppypost' : {
-    view: 'sloppypost'
+    
+    view: 'sloppypost',
+        
+    locals:{
+        title: 'Post'
+    }
   },
+
 
   '/browselist' : {
-    view: 'browselist'
+    view: 'browselist',
+    locals:{
+        title:'Browse',
+        layout: 'browseLayout'
+    }
   },
 
-  '/mapbrowse' : {
-    view: 'mapbrowse'
+  '/mapbrowse' : function( req, res) {
+    console.log('hello');
+
+
+    //return res.send ('dude');
+    return res.view ('mapbrowse', {
+      title:'maps',
+      layout: 'browseLayout',
+      latitude: ((Math.random ()*10) + 30),
+      longitude: (Math.random ()*10 -100)
+    });  
   }
+
+  // {
+  //   view: 'mapbrowse',
+  //   locals:{
+  //       title:'maps',
+  //       layout: 'browseLayout',
+  //       latitude: 30.2672,
+  //       longitude: -97.7431
+
+  //   }
+  // }
 
 
   /***************************************************************************

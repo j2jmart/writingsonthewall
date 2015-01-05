@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%=  title   %></title>
+    <title>New Sails App</title>
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -37,23 +37,46 @@
     <!--STYLES END-->
   </head>
 
-  <body style="background-image: url(/graffiti.jpg); background-repeat:no-repeat; background-attachment:fixed; color:white; background-size: 100% 110%; font-family:verdana;  ">
-
-<!--   <body style="background-color:#08088A; color:white"> -->
+  <body style="background-image: url(/graffiti.jpg); background-repeat:no-repeat; background-attachment:fixed; color:white; background-size: 100% 110%; font-family:Verdana;">
      
 
 
     <div class="sloppy container">
     
-    <!-- <div class = "jumbotron"> -->
+  
 
-    
-      <br>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            <img alt="Brand" src="icon.png" height="25px" width="25px ">
+          </a>
+          <a class="navbar-brand" style="font-family: Verdana;" href="/">Writings On The Wall</a>
+        </div>
 
-      <h1 align="left" style="font-family:Verdana;" > Writings On The Wall </h1>
-      <h4 align="left" > The local message board </h4>
-      <br>
-      <br>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <span style="color:black; font-size:12px">Search What? </span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span style="color:black; font-size:12px"> How far? </span>
+            <input type="text" class="form-control" placeholder="2 miles, etc.">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          <span style="color:black;"> | </span>
+          <a href="/">Sign In</a>
+          <a href="/sloppypost">Post</a>
+<!--           <a href="/">Sign In</a>
+          <a  href="/sloppypost">Post Something</a> -->
+        </form>
+       
+
+       
+      </div>
+    </nav>
+
+
+
 
 
     <!-- </div> -->
@@ -114,6 +137,7 @@
 
     -->
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
     
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
