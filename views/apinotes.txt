@@ -1,0 +1,95 @@
+1/4/2015
+Juston Martinez
+
+I lost my api notes that Mike and I were working on. Trying to recreate the apis that my writings on the wall app will need.
+
+
+
+
+Various general Data pieces collected:
+
+-user info
+	-login name :	string
+	-password	:	string
+	-email		:	string
+
+
+-Infomation In a Message/tweet thing
+	-poster's username	
+	-poster's geolocation at the time of posting
+	-date
+	-title? (if we plan to use a title)
+	-message
+	//image
+	//image thumbnail
+	//video
+		--//  shows if it is present 
+
+
+-browse query info (needed to pull results) the request info?
+	-geolocation of user
+	-radius of which to pull messages
+	-date range
+	-keywords (words or characters in a title or message)
+
+		|
+		|	-A calculation off of the latitudes and longitudes is done to calculate which
+		|	messages are within a particular specified radius
+		|			The calculation would look something like this I imagine:
+		|				-req:   lat: 55 (y axis)   long: 30 (x axis) (getting lat long coordinates), let's call lat = b, 					& long = a
+		|				-convert desired radius pull , ex 5 miles, into lat long units (degrees?), we'll call this 						variable r
+		|				-if I remember correctly, equation for a circle is
+		|					(x-a)^2 + (y-b)^2 = r^2
+		|				-so in our example, the message location has to been within the desired radius, so..
+		|					-(x-30)^2 + (y-55)^2 < (converted 5mi)^2
+		|					-x & y in this equation will be the posting's coordinates
+		|					-So as long as (x-30)^2 + (y-55)^2  is less than the conversion of 5miles squared, it would 					be shown in the results
+		|
+		|	
+		|	-Messages are also filtered on the specified date range
+		|	
+		|	-Messages filtered on search terms, if used
+	   \ /
+
+-infomation pulled from a query  --- the response?
+	{
+	-poster's username
+	-geolocation (represented as either a pin on a map in mapview, or described by the nearest city in list view)
+	-date posted
+	-title
+	-message
+	//image
+	//image thumbnail
+	//video
+	} This information is repeated for every post that meets the criteria of the query
+
+
+
+
+
+
+
+
+
+Sign Up Sheet:
+-Inputs
+	-login name
+	-email
+	-password
+
+After successfully creating an account, then takes you to homepage signed in
+
+
+Sign In Form
+-Inputs
+	login
+	password
+	
+
+
+
+
+
+
+
+

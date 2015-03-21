@@ -41,13 +41,36 @@ module.exports.routes = {
 
 
   '/sloppypost' : {
-    
     view: 'sloppypost',
-        
     locals:{
         title: 'Post'
     }
   },
+
+
+ '/signup' : {
+    view: 'signup',        
+    locals:{
+        title: 'Sign Up'
+    }
+  },
+
+
+'/signin' : {
+    view: 'signin',
+    locals:{
+        title: 'Sign In'
+    }
+  },
+
+
+'/forgetpassword' : {    
+    view: 'forgetpassword',        
+    locals:{
+        title: 'Forgot Password'
+    }
+  },
+
 
 
   '/browselist' : {
