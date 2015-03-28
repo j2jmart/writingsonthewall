@@ -14,7 +14,7 @@ Various general Data pieces collected:
 	-email		:	string
 
 
--Infomation In a Message/tweet thing
+-Information In a Message/tweet thing
 	-poster's username	
 	-poster's geolocation at the time of posting
 	-date
