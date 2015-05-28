@@ -65,7 +65,7 @@ Various general Data pieces collected:
 
 
 
-
+ 
 
 
 
@@ -85,6 +85,29 @@ Sign In Form
 	login
 	password
 	
+
+
+
+The basic Mongo 'Collections' That I will need:
+
+Users
+-user id
+-login name
+-email
+-password
+
+
+Messages
+-user id   (message poster's id)
+-geo  latitude
+-geo  longitude
+-date posted
+-title
+-message
+//image
+//thumbnail image
+//video
+
 
 
 

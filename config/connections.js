@@ -58,11 +58,11 @@ module.exports.connections = {
   ***************************************************************************/
   someMongodbServer: {
     adapter: 'sails-mongo',
-    host: 'mongosoup-shared-db-de001.mongosoup.de',
-    port: 30130,
-    user: 'wotwuser',
-    password: 'Ninjazx-10r',
-    database: 'writingsonthewallmongosoup'
+    host: '127.0.0.1',
+    port: 27017,
+    // user: 'wotwuser',
+    // password: 'Ninjazx-10r',
+    database: 'wotwall'
   },
 
   /***************************************************************************
